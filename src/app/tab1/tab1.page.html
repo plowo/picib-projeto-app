@@ -4,7 +4,7 @@
     <ion-row>
       <ion-col>
         <div class="top-menu">
-          <ion-icon name="menu"></ion-icon>
+          
           <ion-buttons slot="start">
             <ion-menu-button menu="main-menu"></ion-menu-button>
           </ion-buttons>
@@ -24,21 +24,21 @@
 
   </div>
   <div class="profi">
-    <ion-button size="large" expand="block">
+    <ion-button size="large" expand="block" (click)="toAlunos()">
       <ion-icon name="people-outline"></ion-icon>
       <br>
       <ion-label>Alunos</ion-label>
 
     </ion-button>
-    <ion-button size="large" expand="block">
+    <ion-button size="large" expand="block" (click)="toDisciplinas()">
       <ion-icon name="clipboard-outline"></ion-icon>
       <ion-label>Disciplinas</ion-label>
     </ion-button>
-    <ion-button size="large" expand="block">
+    <ion-button size="large" expand="block" (click)="toCalendar()">
       <ion-icon name="calendar-outline"></ion-icon>
       <ion-label>Calendário</ion-label>
     </ion-button>
-    <ion-button size="large" expand="block">
+    <ion-button size="large" expand="block" (click)="toAvisos()"> 
       <ion-icon name="document-outline"></ion-icon>
       <ion-label>Avisos</ion-label>
     </ion-button>

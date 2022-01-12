@@ -1,0 +1,77 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.top-section{
+    
+    min-height: 120px;
+    background-color: #042A2B;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+    
+    ion-row{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-menu{
+        ion-menu-button{
+            width: 40px;
+            height: 40px;
+            color: #EF7B45;
+            
+
+        }
+        display: flex;
+        justify-content: space-between;
+        width: 45px;
+        height: 45px;
+    }
+    .user-menu{
+        ion-icon{
+            color: white;
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .aces-menu{
+        
+        padding-left: 20px;
+    }
+    
+}
+
+.atividade{
+    position: absolute;
+    width: 360px;
+    height: 30px;
+    
+    
+    background: #042A2B;
+    .select{
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.25px;
+    }
+}
+
+.alunos{
+    ion-card-header{
+        text-align: center;
+        ion-icon{
+        
+            width: 40px;
+            height: 37.01px;
+                   
+        }
+    }
+    text-align: center;
+    
+    
+    
+}
+

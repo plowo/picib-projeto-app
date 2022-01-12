@@ -1,0 +1,81 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="background-pic">
+
+    <div class="bottom">
+      <ion-button (click)="inicio()">
+        <img src="../../assets/img/arrow.png">
+      </ion-button>
+    </div>
+    
+    <ion-card>
+      <ion-card-header>
+        
+        <ion-card-title>
+          Cadastre-se!
+        </ion-card-title>
+        <ion-card-subtitle>
+          Preencha as informações abaixo
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input placeholder="Nome Completo"></ion-input>
+
+        </ion-item>
+        
+        <ion-item>
+          <ion-input placeholder="CPF"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Matrícula"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-select placeholder="Defina Seu Cargo">
+            <ion-select-option>Professor</ion-select-option>
+            <ion-select-option>Aluno</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Email"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Digite sua Senha"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Confirme sua Senha"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Telefone"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-input placeholder="Endereço"></ion-input>
+
+        </ion-item>        
+
+        <div class="bottom-section">
+          <ion-button (click)="tabsPage()">
+            Cadastre-se
+          </ion-button>
+          <a href="#">Esqueci Minha Senha</a>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

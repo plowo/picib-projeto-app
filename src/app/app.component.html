@@ -1,7 +1,39 @@
 <ion-app>
   <ion-menu menuId="main-menu" contentId="main">
     <ion-content>
-        <h1>Menu</h1>
+        
+        <div class="menu-header-bg"></div>
+        <div class="header-content">
+          <img src="../assets/img/teacher.png">
+          <ion-label>
+            <h2>Prof. Sabrina Gonçalves</h2>
+          </ion-label>
+        </div>
+
+        <ion-list lines="none">
+          <ion-item button>
+            <ion-label>Sobre</ion-label>            
+          </ion-item>
+          <ion-item button>
+            <ion-label>Fale Conosco  </ion-label>          
+          </ion-item >
+          <ion-item button>
+            <ion-label>Suporte</ion-label>           
+          </ion-item>
+          <ion-item button>
+            <ion-label>Créditos</ion-label>          
+          </ion-item>
+          <ion-item button class="logoff">
+            <ion-icon name="log-in-outline"></ion-icon>
+            <ion-label> Sair </ion-label>       
+          </ion-item>
+          <ion-item button class="instabtn" href="https://www.instagram.com/educadoresantifaantirrace/">
+            <img src="../assets/img/Instagram_icon.png">
+          </ion-item> 
+            
+          
+        </ion-list>
+        
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>

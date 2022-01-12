@@ -1,0 +1,48 @@
+<ion-content class="prin">
+
+  <div class="top-section ion-padding">
+    <ion-row>
+      <ion-col>
+        <div class="top-menu">
+          <ion-icon name="menu"></ion-icon>
+          <ion-buttons slot="start">
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="user-menu">
+          <ion-icon size="large" name="person-circle"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="aces-menu">
+          <img src="../../assets/img/acesmenu.png" alt="">
+        </div>
+      </ion-col>
+    </ion-row>
+    
+  </div>
+  <div>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+  </div>
+  <ion-card-header>
+    <img src="../../assets/img/aviso.png"/>
+    <ion-card-title>
+        Avisos
+    </ion-card-title>
+  </ion-card-header>
+
+  <div class="gree-card">
+    <span>Selecione um aviso ou crie um novo</span>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" (click)="addAviso()">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+</ion-content>

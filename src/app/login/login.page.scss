@@ -15,6 +15,13 @@ ion-content {
   flex-direction: column;
   justify-content: center;
 
+  
+}
+
+ion-button{
+  --background: transparent;
+  --box-shadow: none;
+  margin-top: auto;
 }
 
 ion-card {
@@ -23,7 +30,9 @@ ion-card {
   margin-right: auto;
   background: transparent;
   box-shadow: none;
-  text-align: center;
+  text-align: center; 
+    
+  
 
   ion-card-title {
     color: #fff;
@@ -90,5 +99,7 @@ ion-card {
     }
 
   }
+
+  
 
 }
