@@ -6,7 +6,7 @@
   <div class="background-pic">
 
     <div class="bottom">
-      <ion-button (click)="inicio()">
+      <ion-button (click)="inicioPage">
         <img src="../../assets/img/arrow.png">
       </ion-button>
     </div> 
@@ -18,7 +18,7 @@
           Bem-Vindo!
         </ion-card-title>
         <ion-card-subtitle>
-          Caso não tenha conta, <a href="#">Clique Aqui!</a>
+          Caso não tenha conta, <a [href]="'signup'">Clique Aqui!</a>
         </ion-card-subtitle>
       </ion-card-header>
       <ion-card-content>
@@ -31,7 +31,7 @@
           <ion-input type="password" placeholder="Senha"></ion-input>
 
         </ion-item>
-        <a href="#">Esqueci Minha Senha</a>
+        <a [href]="'forget'">Esqueci Minha Senha</a>
 
         <div class="bottom-section">
           <ion-button [href]="'tabs'">
