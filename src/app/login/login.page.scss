@@ -31,7 +31,13 @@ ion-card {
   background: transparent;
   box-shadow: none;
   text-align: center; 
-    
+ 
+  .forget{
+    background-color: #042A2B;
+    color: rgba(255, 253, 253, 0.897);
+    font-size: 14px;
+    border-radius: 5px;
+  }
   
 
   ion-card-title {
@@ -41,8 +47,10 @@ ion-card {
   }
 
   ion-card-subtitle {
+    background-color: #042A2B;
     color: rgba(255, 253, 253, 0.897);
     font-size: 14px;
+    border-radius: 5px;
 
     a {
       text-decoration: none;
@@ -53,7 +61,8 @@ ion-card {
   }
 
   ion-item {
-    --ion-item-background: transparent;
+    
+    //--ion-item-background: transparent;
     --border-width: 2px;
     --inner-border-width: 0;
     --border-color: #fff;
@@ -65,7 +74,7 @@ ion-card {
   ion-input {
     width: 280px;
     height: 35px;
-    color: #fff;
+    //color: #fff;
     font-weight: bold;
   }
 
@@ -97,6 +106,7 @@ ion-card {
       font-weight: bold;
       margin-top: 5px;
     }
+
 
   }
 

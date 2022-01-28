@@ -3,6 +3,17 @@
     *{
         font-family: 'Roboto', sans-serif;
     }
+
+    .alertopn{
+        .cancelbtn{
+            color: #eb445a;
+        }
+        .savebtn{
+            background-color: #2dd36f;
+            color: white;
+            border-radius: 12px;
+        }
+    }
   ion-toolbar{
     
     max-height: 64px;
@@ -106,3 +117,5 @@
             
         }
     }
+
+   

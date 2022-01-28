@@ -11,9 +11,9 @@
           </div>
         </ion-col>
         <ion-col>
-          
-            <ion-label>Ínicio</ion-label>
-          
+
+          <ion-label>Ínicio</ion-label>
+
         </ion-col>
         <ion-col>
           <div class="aces-menu">
@@ -26,26 +26,44 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="prin">
-  
-  <div class="profi">
-    <ion-button size="large" expand="block" (click)="toAlunos()">
-      <ion-icon name="people-outline"></ion-icon>
-      <br>
-      <ion-label>Alunos</ion-label>
 
-    </ion-button>
-    <ion-button size="large" expand="block" (click)="toDisciplinas()">
-      <ion-icon name="clipboard-outline"></ion-icon>
-      <ion-label>Disciplinas</ion-label>
-    </ion-button>
-    <ion-button size="large" expand="block" (click)="toCalendar()">
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label>Calendário</ion-label>
-    </ion-button>
-    <ion-button size="large" expand="block" (click)="toAvisos()"> 
-      <ion-icon name="document-outline"></ion-icon>
+  <div class="profi">
+    <ion-row>
+     
+        <ion-card button>
+          <img src="../../assets/img/media.png">
+          <ion-label>Alunos</ion-label>
+          <ion-card-content>
+            Alunos do Cursinho
+          </ion-card-content>
+        </ion-card>
+     
+      <ion-card button>
+        <img src="../../assets/img/media.png">
+        <ion-label>Disciplinas</ion-label>
+        <ion-card-content>
+          Disciplinas do Cursinho
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card button>
+        <img src="../../assets/img/media.png">
+        <ion-label>Calendário</ion-label>
+        <ion-card-content>
+          Calendário do Cursinho
+        </ion-card-content>
+      </ion-card>
+   
+    <ion-card button>
+      <img src="../../assets/img/media.png">
       <ion-label>Avisos</ion-label>
-    </ion-button>
+      <ion-card-content>
+        Avisos Gerais
+      </ion-card-content>
+    </ion-card>
+    </ion-row>
+
   </div>
 
 </ion-content>
