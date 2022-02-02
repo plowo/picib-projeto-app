@@ -10,6 +10,7 @@ export class ModalPage implements OnInit {
 
   @Input() id: string;
   note: Note = null;
+  
 
   constructor(private dataService: DataService, private modalCtrl: ModalController, private toastCtrl: ToastController) { }
 
@@ -17,6 +18,7 @@ export class ModalPage implements OnInit {
     this.dataService.getNoteById(this.id).subscribe(res => {
       this.note = res;
     });
+    
   }
 
   async deleteNote() {

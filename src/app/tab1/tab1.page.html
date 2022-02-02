@@ -27,22 +27,25 @@
 </ion-header>
 
 <ion-content class="prin">
-  <ion-list>
-    <ion-item *ngFor="let note of notes" (click)="openNote(note)">
-      <ion-label>
-        <h2>Atividade</h2> {{ note.title }}
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  
+
+  <ion-card button *ngFor="let disciplina of disciplinas" [href]="'disciplinas'">
+    <ion-label>Turma {{ disciplina.titulo }} {{ disciplina.turno }}</ion-label>
+    <ion-card-content><p>Mestrado por {{disciplina.prof}}</p></ion-card-content>
+  </ion-card>
  
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  
+
+  
+ 
+  <!--<ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="addNote()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
 
-  <!--<div>
+  <div>
     <ion-card button>
       <img src="../../assets/img/atividades.png">
       <ion-label>Atividades</ion-label>

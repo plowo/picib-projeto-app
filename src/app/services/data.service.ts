@@ -8,7 +8,19 @@ export interface Note {
   id?: string;
   title: string;
   text: string;
+  
+  
 }
+
+
+
+export interface Disciplina {
+  id?: string;
+  titulo: string;
+  texto: string;
+
+}
+
 
 
 @Injectable({
@@ -18,16 +30,24 @@ export class DataService {
 
   constructor(private firestore: Firestore) { }
 
+  
+
   getNotes(): Observable<Note[]> {
     const notesRef = collection(this.firestore, 'notes');
     return collectionData(notesRef, { idField: 'id'}) as Observable<Note[]>;
+  }
+
+  getDisciplinas(): Observable<Disciplina[]> {
+    const notesRef = collection(this.firestore, 'disciplina');
+    return collectionData(notesRef, { idField: 'id'}) as Observable<Disciplina[]>;
   }
  
   getNoteById(id): Observable<Note> {
     const noteDocRef = doc(this.firestore, `notes/${id}`);
     return docData(noteDocRef, { idField: 'id' }) as Observable<Note>;
   }
- 
+
+  
   addNote(note: Note) {
     const notesRef = collection(this.firestore, 'notes');
     return addDoc(notesRef, note);

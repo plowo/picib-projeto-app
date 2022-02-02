@@ -8,23 +8,27 @@
 
   <div *ngIf="note">
     <ion-item>
-      <ion-label position="stacked">Title</ion-label>
+      <ion-label position="stacked">Titulo</ion-label>
       <ion-input [(ngModel)]="note.title"></ion-input>
     </ion-item>
  
     <ion-item>
-      <ion-label position="stacked">Note</ion-label>
+      <ion-label position="stacked">Descrição</ion-label>
       <ion-textarea [(ngModel)]="note.text" rows="8"></ion-textarea>
     </ion-item>
+
+    
   </div>
+
+  
  
   <ion-button expand="block" color="success" (click)="updateNote()">
     <ion-icon name="save" slot="start"></ion-icon>
-    Update
+    Atualizar
   </ion-button>
   <ion-button expand="block" color="danger" (click)="deleteNote()">
     <ion-icon name="trash" slot="start"></ion-icon>
-    Delete
+    Deletar
   </ion-button>
 
 </ion-content>

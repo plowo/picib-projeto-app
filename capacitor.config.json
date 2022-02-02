@@ -1,5 +1,5 @@
 {
-	"appId": "ionic-app",
+	"appId": "com.picibapp.myapp",
 	"appName": "Picib Projeto App",
 	"webDir": "www",
 	"bundledWebRuntime": false

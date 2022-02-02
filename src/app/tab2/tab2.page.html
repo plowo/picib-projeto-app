@@ -28,41 +28,22 @@
 <ion-content class="prin">
 
   <div class="profi">
-    <ion-row>
-     
-        <ion-card button>
-          <img src="../../assets/img/media.png">
-          <ion-label>Alunos</ion-label>
-          <ion-card-content>
-            Alunos do Cursinho
-          </ion-card-content>
-        </ion-card>
-     
-      <ion-card button>
-        <img src="../../assets/img/media.png">
-        <ion-label>Disciplinas</ion-label>
-        <ion-card-content>
-          Disciplinas do Cursinho
-        </ion-card-content>
-      </ion-card>
-    </ion-row>
-    <ion-row>
-      <ion-card button>
-        <img src="../../assets/img/media.png">
-        <ion-label>Calendário</ion-label>
-        <ion-card-content>
-          Calendário do Cursinho
-        </ion-card-content>
-      </ion-card>
+    <ion-card button  [href]="'calendario'">
+      
+      <ion-label>Calendário</ion-label>
+      <ion-card-content>
+        Calendário do Cursinho
+      </ion-card-content>
+    </ion-card>
    
-    <ion-card button>
-      <img src="../../assets/img/media.png">
+    <ion-card button [href]="'avisos'">
+      
       <ion-label>Avisos</ion-label>
       <ion-card-content>
         Avisos Gerais
       </ion-card-content>
     </ion-card>
-    </ion-row>
+    
 
   </div>
 

@@ -1,102 +1,106 @@
 ion-content {
-    --ion-background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-  
-  }
-  
-  .background-pic {
-    height: 100vh;
-    width: 100%;
-    background: url("../../assets/img/tela-login.png");
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    flex-direction: column;
-    justify-content: center;
-  
+  --ion-background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.background-pic {
+  height: 100vh;
+  width: 100%;
+  background: url("../../assets/img/tela-login.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+ion-button{
+  --background: transparent;
+  --box-shadow: none;
+  margin-top: auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+
+ion-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+
+  ion-card-title {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: #042A2B 2px 3px 2px;
+
   }
 
-  ion-button{
-    --background: transparent;
-    --box-shadow: none;
-    margin-top: auto;
-  }
-  
-  
-  ion-card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: transparent;
-    box-shadow: none;
-    text-align: center;
-  
-    ion-card-title {
-      color: #fff;
-      font-size: 30px;
-  
-    }
-  
-    ion-card-subtitle {
-      color: #D84727;
-      font-size: 14px;
-  
-      a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #D84727;
-        font-size: 15px;
-      }
-    }
-  
-    ion-item {
-        --background: rgba(4,42,43,0.8);
-      --border-width: 2px;
-      --inner-border-width: 0;
-      --border-color: #fff;
-      --border-radius: 15px;
-      margin-top: 15px;
-  
-    }
-  
-    ion-input {
-      width: 280px;
-      height: 35px;
-      color: #fff;
-      font-weight: bold;
-    }
-  
+  ion-card-subtitle {
+    color: #fff;
+    font-size: 14px;
+    background-color: #042A2B;
+    
+
     a {
       text-decoration: none;
+      font-weight: bold;
+      color: #D84727;
+      font-size: 15px;
+    }
+  }
+
+  ion-item {
+      --background: rgba(4,42,43,0.8);
+    --border-width: 2px;
+    --inner-border-width: 0;
+    --border-color: #fff;
+    --border-radius: 15px;
+    margin-top: 15px;
+
+  }
+
+  ion-input {
+    width: 280px;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .bottom-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ion-button {
+      width: 280px;
+      height: 40px;
+      --background: #D84727;
+      --border-radius: 40px;
+      text-transform: none;
+    }
+
+    span {
       color: #fff;
-      font-weight: 300;
-      font-size: 13px;
-      display: block;
+      font-weight: bold;
       margin-top: 5px;
     }
-  
-    .bottom-section {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      ion-button {
-        width: 280px;
-        height: 40px;
-        --background: #D84727;
-        --border-radius: 40px;
-        text-transform: none;
-      }
-  
-      span {
-        color: #fff;
-        font-weight: bold;
-        margin-top: 5px;
-      }
-  
-    }
-  
+
   }
-  
+
+}

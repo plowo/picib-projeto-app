@@ -7,8 +7,11 @@ import { Auth, signInWithEmailAndPassword, createUserWithEmailAndPassword} from 
 
 export interface Users {
   id?: string;
+  uid: string;
   email: any;
   password: any;
+  cargo: any;
+  telefone:any;
 }
 
 @Injectable({
@@ -37,6 +40,11 @@ export class FireserviceService {
   getDetails(): Observable<Users[]> {
     const usersRef = collection(this.firestore, 'users');
     return collectionData(usersRef, { idField: 'id'}) as Observable<Users[]>;
+  }
+
+  getUserByUID(uid): Observable<Users > {
+    const noteDocRef = doc(this.firestore, `notes/${uid}`);
+    return docData(noteDocRef, { idField: 'id' }) as Observable<Users>;
   }
 
 }

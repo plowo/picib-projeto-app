@@ -5,5 +5,14 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+     Nome: {{ user.name }}
+     {{ user.cargo }}
+     {{ user.email }}
+     {{ user.telefone }}
+
+    </ion-item>
+  </ion-list>
 
 </ion-content>
